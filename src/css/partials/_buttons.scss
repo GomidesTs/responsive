@@ -1,0 +1,33 @@
+/* Links */
+a {
+    color: $link-colors;
+
+    text-decoration: none;
+
+    position: relative;
+
+    transition: 1.5s linear;
+
+    &::after {
+        content: "";
+
+        position: absolute;
+        top: 90%;
+        left: 0;
+
+        width: 0;
+        height: 2px;
+
+        background-color: $text-colors;
+        
+        transition: 0.5s ease;
+    }
+    
+    &:hover {
+        color: $text-colors;
+        
+        &::after {
+            width: 120%;
+        }
+    }
+}
