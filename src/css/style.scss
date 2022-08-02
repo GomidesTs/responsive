@@ -1,0 +1,25 @@
+/* Resetting the default browser styles. */
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import "partials/colors";
+
+/* Main Style */
+body{
+    background-color: $body-colors;
+
+    padding: 6rem 2.3rem 6.6rem;
+}
+
+ul {
+    list-style: none;
+}
+
+@import "partials/typography";
+@import "partials/buttons";
+@import "partials/layout";
